@@ -1,0 +1,382 @@
+/* General Styles */
+* {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header and Navbar */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: black;
+    z-index: 1000;
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Pushes the logo and company name to the right */
+}
+
+.logo-container img {
+    height: 40px; /* Adjust size as needed */
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.logo-container h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-right: auto; /* Pushes the navigation links to the left */
+}
+
+.nav-links li {
+    margin-right: 20px; /* Adjust the space between nav items */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+}
+
+.nav-links a:hover {
+    background-color: whitesmoke;
+    color: black;
+    border-radius: 10px;
+}
+
+/* Banner Section with Video */
+#banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: none;
+}
+
+#banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire area */
+    z-index: -1; /* Places the video behind the text */
+}
+
+#banner-text {
+    position: relative;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centering the text and button */
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#banner-text h1 {
+    font-size: 4em;
+    color: white;
+}
+
+#banner-text p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+/* Shop Now Button - Smaller size and hover animation */
+.btn {
+    display: inline-block; /* Ensures it's treated as a button */
+    padding: 10px 20px; /* Adjust padding for a smaller button */
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    font-size: 1em; /* Standard font size */
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: white;
+    transform: scale(1.1); /* Hover animation */
+    box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+#banner-text a {
+    margin-top: 20px; /* Adds spacing between the text and the button */
+}
+
+/* Services Section */
+#services {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+    background-color: black;
+}
+
+.services-item {
+    text-align: center;
+}
+
+.services-item img {
+    width: 100px;
+}
+
+.services-item h3 {
+    color: white;
+}
+
+/* Product Categories */
+#product-categories {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows the products to wrap if the screen size is small */
+    gap: 20px; /* Space between product items */
+    padding: 0 20px;
+}
+
+.category-list a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    width: 200px; /* Adjust width for a consistent look */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.category-list a img {
+    width: 100%; /* Ensures all images are uniformly sized */
+    height: 200px; /* Smaller height for better arrangement */
+    object-fit: cover; /* Ensures images fit the container */
+    transition: transform 0.4s ease-in-out; /* Hover effect for the image */
+}
+
+.category-list a:hover img {
+    transform: scale(1.1); /* Enlarges the image on hover */
+}
+
+.category-list a p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
+/* Add Amazing Hover Animations to All Buttons */
+button, .category-list a {
+    transition: transform 0.4s ease, background-color 0.3s ease;
+}
+
+button:hover, .category-list a:hover {
+    transform: translateY(-5px);
+    background-color: #333;
+}
+
+/* Video Section */
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-overlay h2 {
+    font-size: 2.5em;
+}
+
+.video-overlay p {
+    font-size: 1.2em;
+}
+
+/* Footer */
+#footer {
+    padding: 20px;
+    background-color: #0b0b0b;
+    color: #fff;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.footer-heading{
+    font-family: Algerian;
+    font-size: x-large;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 5px;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 1.5px;
+    border-radius: 5px;
+}
+
+.footer-links a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Product Page */
+/* Additional Styles for Watches Page */
+
+/* Collections Section */
+#collections {
+    background-color: black;
+    padding: 50px 0;
+    margin-top: 25px;
+}
+
+.collection {
+    margin-bottom: 50px; /* Space between collections */
+}
+
+.collection h3 {
+    color: white;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 20px; /* Space between product items */
+    justify-content: center; /* Center products */
+    margin-bottom: 30px;
+}
+
+.product-item {
+    flex: 1 1 200px; /* Flexible item width */
+    max-width: 300px; /* Maximum width for each product */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    text-align: center;
+}
+
+.product-img {
+    width: 100%; /* Set image width to full container */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.product-item:hover .product-img {
+    transform: scale(1.1); /* Zoom in image on hover */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay with transparency */
+    color: white;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth fade in effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.product-item:hover .overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.overlay .text {
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px; /* Padding inside the overlay */
+}
+
+.buy-now-btn {
+    display: block; /* Ensure button is centered */
+    margin-top: 10px; /* Space between image and button */
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buy-now-btn:hover {
+    background-color: #ff5733;
+    color: white;
+}

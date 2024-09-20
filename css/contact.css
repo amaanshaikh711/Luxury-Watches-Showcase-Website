@@ -1,0 +1,71 @@
+ /* Additional inline CSS for improved styling */
+ .content{
+    margin-top: 30px;
+}
+h2,h3{
+    text-align: center;
+}
+.contact-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-container h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact-container p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form div {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 0.75rem;
+    border: none;
+    background-color: rgb(82, 82, 82);
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #333;
+}
+
+#responseMessage {
+    margin-top: 1rem;
+    color: green;
+}

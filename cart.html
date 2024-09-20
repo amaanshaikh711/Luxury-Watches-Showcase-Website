@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/watch.css">
+</head>
+<body>
+
+    <div class="wrapper"> 
+    
+        <header>
+            <nav id="nav">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="watch.html">Watches</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="logo-container">
+                    <a href="cart.html"><img src="images/logo.JPG" alt="A.S. Electronics Logo"></a>
+                    <h1 class="cmpny-name">Luxury Watches</h1> 
+                </div>
+
+                <!-- Cart Image -->
+                <a href="cart.html" class="cart-icon">
+                    <img src="images/cart1.png" alt="Cart">
+                </a>
+                
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Cart Section -->
+        <div class="cart-section">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                
+            </div>
+            <div class="cart-summary">
+                <h3>Total: $<span id="cart-total">0.00</span></h3>
+                <button id="checkout-btn">Checkout</button>
+            </div>
+        </div>
+
+    </div>
+
+    <footer id="footer">
+        <div class="footer-content">
+            <h3 class="footer">Luxury Watches</h3>
+            <p class="info">Your destination for Timeless Watches</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="watch.html">Watches</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <p class="info">Created by Aman Shaikh</p>
+            <p class="footer">© Copyright 2024</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+</body>
+</html>
