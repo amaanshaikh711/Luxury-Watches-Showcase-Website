@@ -1,27 +1,26 @@
+//LOAD HTML FILES HEADER AND FOOTER
+fetch('include/footer.html') 
+    .then(response => response.text()) 
+    .then(html => { 
+        document.getElementById('footer').innerHTML = html; 
+    }) 
+    .catch(error => console.error('Error loading HTML:', error)); 
+
+fetch('include/header.html') 
+    .then(response => response.text()) 
+    .then(html => { 
+        document.getElementById('header').innerHTML = html; 
+    }) 
+    .catch(error => console.error('Error loading HTML:', error)); 
+
+
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
-
-  
-  $(document).ready(function(){
-      $('.btn').hover(function(){
-          $(this).css('background-color', 'grey');
-      }, function(){
-          $(this).css('background-color', 'white');
-      });
-  });
-
-
-$(document).ready(function() {
-    $('.buy-now-btn').on('click', function() {
-        var productName = $(this).closest('.product-img-container').find('.overlay p').text();
-        alert('Successfully added ' + productName + ' to the cart!');
-    });
-});
+// menuToggle.addEventListener('click', () => {
+//     navLinks.classList.toggle('active');
+// });
 
 // $(document).ready(function(){
 //     $('.buy-now-btn').hover(function(){

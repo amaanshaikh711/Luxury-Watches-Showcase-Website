@@ -2,25 +2,53 @@
  .content{
     margin-top: 30px;
 }
-h2,h3{
+
+.contact-title{
     text-align: center;
-}
-.contact-container {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
 }
 
-.contact-container h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-weight: 500;
+.contact-title::after
+{
+  content: '';
+  border-bottom: 3px solid #ccc;
+  width: 6%;
+  display: block;
+  margin: 10px auto 50px;
+}
+
+.contact-section{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-left, .contact-right{
+    width: 40%;
+    color: #ccc;
+}
+
+.contact-left h3{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+.contact-left h3::after
+{
+  content: '';
+  border-bottom: 3px solid #ccc;
+  width: 15%;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-container {
+    padding: 7rem;
+    font-family: 'Roboto', sans-serif;
 }
 
 .contact-container p {
     margin-bottom: 1rem;
     line-height: 1.6;
+    font-weight: 500;
 }
 
 .contact-form {
@@ -62,7 +90,7 @@ h2,h3{
 }
 
 .contact-form button:hover {
-    background-color: #333;
+    /* background-color: #333; */
 }
 
 #responseMessage {

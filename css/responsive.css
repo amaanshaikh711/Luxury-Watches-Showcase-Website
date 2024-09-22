@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px) {
+    .nav-links{
+        display: none;
+    }
+
+    .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        line-height: 0.5;
+    }
+}

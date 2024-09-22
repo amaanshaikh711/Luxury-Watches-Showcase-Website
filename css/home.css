@@ -14,7 +14,7 @@
 .category-list a {
     text-decoration: none;
     display: block;
-    width: 250px; /* Keep the width consistent for all category items */
+    width: 20%; /* Keep the width consistent for all category items */
 }
 
 .category-list img {
@@ -33,5 +33,9 @@
     font-size: 1.2em;
     color: white;
     text-align: center;
+}
+
+.products-item h4{
+    margin-top: 3vh;
 }
 

@@ -8,7 +8,7 @@ html, body {
 
 /* Flexbox layout for the wrapper */
 .wrapper {
-    min-height: 100%;
+    min-height: calc(100% - 15vh);
     display: flex;
     flex-direction: column;
 }
@@ -22,13 +22,16 @@ html, body {
 #footer {
     background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 10px;
     position: relative;
     width: 100%;
     bottom: 0;
 }
 
+.cart-data{
+    display: flex;
+    justify-content: space-between;
+}
 
 .cart-section {
     margin-top: 100px;
@@ -41,6 +44,15 @@ html, body {
     margin-bottom: 40px;
     font-size: 2.5em;
 }
+
+.cart-section h2::after{
+    content: '';
+    border-bottom: 1px solid #ccc;
+    width: 8%;
+    display: block;
+    padding-bottom: 5px;
+    margin: 10px auto 0;
+  }
 
 #cart-items {
     margin-bottom: 20px;
@@ -70,6 +82,7 @@ html, body {
 .cart-summary {
     text-align: center;
     margin-top: 20px;
+    width: 30%;
 }
 
 #checkout-btn {
@@ -89,5 +102,104 @@ html, body {
 footer {
     padding: 20px;
     background-color: #0b0b0b;
+}
+
+.cart-section{
+    color: #ccc;
+    padding: 2vw 5vw;
+}
+
+.cart-section h5 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.cart-section h5::after{
+  content: '';
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  display: block;
+  padding-bottom: 5px;
+
+}
+
+.user-details-form{
+    width: 45%;
+}
+
+.user-details-form label{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.form-group{
+    padding-top: 15px;
+
+}
+
+.form-control{
+    width: 100%;
+    font-size: 16px;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.submit{
+    width: 100%;
     text-align: center;
+}
+
+.btn.btn-submit{
+    margin-top: 3rem;
+    background-color: #444;
+    background-color: #ccc;
+}
+
+.btn.btn-submit:hover{
+    transform: scale(1);
+}
+
+.cart-list{
+    width: 40%;
+}
+
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    max-height: 34vh;
+}
+
+.product-list{
+    /* background-color: #cccccc0f; */
+    border-bottom: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.product-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.product-list img{
+    width: 50px;
+    height: 50px;
+}
+
+.cart-total{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.remove-btn{
+    color: red;
+    padding-left: 10px;
+    cursor: pointer;
 }

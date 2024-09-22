@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watches</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/watch.css">
@@ -15,48 +15,10 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<script>
-    $(document).ready(function() {
-        // Animate buttons on hover
-        $('.overlay .btn').hover(function() {
-            if ($(this).hasClass('add-to-cart')) {
-                $(this).stop().animate({marginLeft: '20px'}, 300);
-            } else if ($(this).hasClass('buy-now')) {
-                $(this).stop().animate({marginRight: '20px'}, 300);
-            }
-        }, function() {
-            $(this).stop().animate({marginLeft: '0', marginRight: '0'}, 300);
-        });
-    });
-</script>
-
-
 <body>
 
-    <header>
-        <nav id="nav">
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#products">Watches</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-            <div class="logo-container">
-                <a href="cart.html"><img src="images/logo.JPG" alt="A.S. Electronics Logo"></a>
-                <h1 class="cmpny-name">Luxury Watches</h1> 
-            </div>
-
-             <!-- Cart Image -->
-             <a href="cart.html" class="cart-icon">
-                <img src="images/cart1.png" alt="Cart">
-            </a>
-            
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
+    <header id="header">
+        
     </header>
 
     <section id="products">
@@ -69,66 +31,74 @@
                 <div class="products-item">
                     <img src="images/patek1.png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Nautolias - $6499</h5>
+                        <p>Patek Philipe Nautolias</p>
+                        <div class="price">$6499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek2.png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe prime- $7499</h5>
+                        <p>Patek Philipe Prime</p>
+                        <div class="price">$7499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek3.png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Geneve - $8499</h5>
+                        <p>Patek Philipe Geneve</p>
+                        <div class="price">$8499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek4.png " alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Nautolias - $9999</h5>
+                        <p>Patek Philipe Nautolias</p>
+                        <div class="price">$9999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <!-- New watches -->
                 <div class="products-item">
                     <img src="images/patek5.png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Nautolias prime - $12000</h5>
+                        <p>Patek Philipe Nautolias prime</p>
+                        <div class="price">$12000</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek6.png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Oyester - $13499</h5>
+                        <p>Patek Philipe Oyester</p>
+                        <div class="price">$13499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek8 (2).png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe World Time - $1499</h5>
+                        <p>Patek Philipe World Time</p>
+                        <div class="price">$1499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/patek7 (2).png" alt="watch">
                     <div class="overlay">
-                        <h5>Patek Philipe Nautolias dark - $7999</h5>
+                        <p>Patek Philipe Nautolias dark</p>
+                        <div class="price">$7999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
             </div>
@@ -143,66 +113,74 @@
                 <div class="products-item">
                     <img src="images/hublot9.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Big Bang Geneve - $16499</h5>
+                        <p>Hublot Big Bang Geneve</p>
+                        <div class="price">$16499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublotl.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Classic Geneve - $7499</h5>
+                        <p>Hublot Classic Geneve</p>
+                        <div class="price">$7499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublot4.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Chronograph Geneve - $8499</h5>
+                        <p>Hublot Chronograph Geneve</p>
+                        <div class="price">$8499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublot5.png " alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Classic Fusion - $9999</h5>
+                        <p>Hublot Classic Fusion</p>
+                        <div class="price">$9999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <!-- New watches -->
                 <div class="products-item">
                     <img src="images/hublot6.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Diamond Fusion - $12000</h5>
+                        <p>Hublot Diamond Fusion</p>
+                        <div class="price">$12000</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublot7.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Chronograph Automatic - $5499</h5>
+                        <p>Hublot Chronograph Automatic - $</p>
+                        <div class="price">$5499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublot8.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Ferrari Fusin - $14999</h5>
+                        <p>Hublot Ferrari Fusin</p>
+                        <div class="price">$14999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/hublot2.png" alt="watch">
                     <div class="overlay">
-                        <h5>Hublot Chronograph Geneve - $7999</h5>
+                        <p>Hublot Chronograph Geneve</p>
+                        <div class="price">$7999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
             </div>
@@ -216,66 +194,74 @@
                 <div class="products-item">
                     <img src="images/rolex1.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Submariner - $6499</h5>
+                        <p>Rolex Submariner</p>
+                        <div class="price">$6499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex2.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Oyester Perpetual - $7499</h5>
+                        <p>Rolex Oyester Perpetual</p>
+                        <div class="price">$7499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex3.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Oyester Chronograph - $8499</h5>
+                        <p>Rolex Oyester Chronograph</p>
+                        <div class="price">$8499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex4.png " alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Submariner Gold - $9999</h5>
+                        <p>Rolex Submariner Gold</p>
+                        <div class="price">$9999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <!-- New watches -->
                 <div class="products-item">
                     <img src="images/rolex5.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex GMT Master - $12000</h5>
+                        <p>Rolex GMT Master</p>
+                        <div class="price">$12000</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex6.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Datejust - $5499</h5>
+                        <p>Rolex Datejust</p>
+                        <div class="price">$5499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex7.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Daytona - $4999</h5>
+                        <p>Rolex Daytona</p>
+                        <div class="price">$4999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/rolex8.png" alt="watch">
                     <div class="overlay">
-                        <h5>Rolex Explorer - $7999</h5>
+                        <p>Rolex Explorer</p>
+                        <div class="price">$7999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
             </div>
@@ -289,66 +275,74 @@
                 <div class="products-item">
                     <img src="images/jac1.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Jaeger LeCoultre - $18499</h5>
+                        <p>Jacob & Co Jaeger LeCoultre</p>
+                        <div class="price">$18499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac4.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Baselworld - $17499</h5>
+                        <p>Jacob & Co Baselworld</p>
+                        <div class="price">$17499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac6.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Perpetual Calendar - $18499</h5>
+                        <p>Jacob & Co Perpetual Calendar</p>
+                        <div class="price">$18499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac-casino-removebg-preview.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Casino - $29999</h5>
+                        <p>Jacob & Co Casino</p>
+                        <div class="price">$29999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <!-- New watches -->
                 <div class="products-item">
                     <img src="images/jac2.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Honkong Clock- $22000</h5>
+                        <p>Jacob & Co Honkong Clock</p>
+                        <div class="price">$22000</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac3.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Astronimia - $35499</h5>
+                        <p>Jacob & Co Astronimia</p>
+                        <div class="price">$35499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac5.avif" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Bugatti Chiron - $34999</h5>
+                        <p>Jacob & Co Bugatti Chiron</p>
+                        <div class="price">$34999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/jac90.png" alt="watch">
                     <div class="overlay">
-                        <h5>Jacob & Co Jwellery Turbillion - $17999</h5>
+                        <p>Jacob & Co Jwellery Turbillion</p>
+                        <div class="price">$17999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
             </div>
@@ -362,66 +356,74 @@
                 <div class="products-item">
                     <img src="images/taghuer8.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Chronograph - $8499</h5>
+                        <p>Tag Huer Chronograph</p>
+                        <div class="price">$8499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/taghuer2.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Balmain Collection - $7499</h5>
+                        <p>Tag Huer Balmain Collection</p>
+                        <div class="price">$7499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/taghuer3.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Tachometer - $8499</h5>
+                        <p>Tag Huer Tachometer</p>
+                        <div class="price">$8499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/taghuer5.png " alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Automatic - $9999</h5>
+                        <p>Tag Huer Automatic</p>
+                        <div class="price">$9999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <!-- New watches -->
                 <div class="products-item">
                     <img src="images/taghuer6.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Callibre 5 - $12000</h5>
+                        <p>Tag Huer Callibre 5</p>
+                        <div class="price">$12000</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/taghuer7.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Monaco Callibre - $5499</h5>
+                        <p>Tag Huer Monaco Callibre</p>
+                        <div class="price">$5499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/Capture1-removebg-preview.png" alt="watch">
                     <div class="overlay">
-                        <h5>Tag Huer Callibre 4 - $4999</h5>
+                        <p>Tag Huer Callibre 4</p>
+                        <div class="price">$4999</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
                 <div class="products-item">
                     <img src="images/t5-removebg-preview.png" alt="watch">
                     <div class="overlay">
-                        <h5>T5 H3946G Sport Watch - $1499</h5>
+                        <p>T5 H3946G Sport Watch</p>
+                        <div class="price">$1499</div>
                         <button class="btn add-to-cart">Add to Cart</button>
-                        <button class="btn">Buy Now</button>
+                        <!-- <button class="btn">Buy Now</button> -->
                     </div>
                 </div>
             </div>
@@ -439,65 +441,23 @@
   
 
     <footer id="footer">
-        <div class="footer-content">
-            <div class="logo-container">
-                <img src="images/logo.jpg" alt="Watches Logo">
-                <h1 class="cmpny-name">Luxury Watches</h1><br>
-            </div>
-            <p class="info">Your destination for Timeless Watches</p>
-            <ul class="footer-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <p class="info">Created by Aman Shaikh</p>
-            <p class="footer">© Copyright 2024</p>
-        </div>
+        
     </footer>
 
     <!-- JavaScript for Menu Toggle -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/add-to-cart.js"></script>
     <script>
+
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
-
-        // Function to add item to cart
-function addToCart(image, name, price) {
-    // Get existing cart from localStorage
-    let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    // Add the new item to the cart
-    cart.push({ image, name, price });
-
-    // Save cart to localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
-
-    // Update cart count
-    updateCartCount();
-
-    // Display confirmation popup
-    alert(`${name} added to cart`);
-}
-
-// Attach event listeners to 'Add to Cart' buttons
-document.querySelectorAll('.buy-now-btn').forEach(btn => {
-    btn.addEventListener('click', event => {
-        const productItem = event.target.closest('.product-item');
-        const image = productItem.querySelector('img').src;
-        const name = productItem.querySelector('p').textContent;
-        const price = parseFloat(productItem.querySelector('.price').textContent.replace('$', ''));
-        addToCart(image, name, price);
-    });
-});
-
     </script>
 
 </body>

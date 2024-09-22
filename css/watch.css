@@ -1,22 +1,8 @@
 body{
     background-color: rgba(22, 22, 22, 0.996);
 }
-.logo-container{
-    margin-right: 55px;
-}
-.cart-icon {
-    position: absolute;
-    top: 10px;
-    right: 30px;
-    width: 40px;
-    height: 10px;
-    margin-left: 20px;
-}
-.cart-icon img {
-    width: 100%;
-    height: auto;
 
-}
+
 #nav{
     text-decoration: none;
 }
@@ -31,6 +17,21 @@ margin-bottom: 1.5rem;
 font-family: Algerian;
 }
 
+.product-label h4 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-label h4::after
+{
+  content: '';
+  border-bottom: 3px solid #ccc;
+  width: 10%;
+  display: block;
+  margin: 7px auto 0;
+}
+
 .products-list {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +43,14 @@ font-family: Algerian;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+}
+
+.products-item p{
+    font-size: 1.8em;
+}
+.products-item .price {
+    font-size: 1.6em;
+    margin-bottom: 1rem;
 }
 .products-item img {
 width: 100%;

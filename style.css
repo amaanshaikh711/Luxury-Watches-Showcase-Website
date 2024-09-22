@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+.menu-toggle{
+    display: none;
+    color: #fff;
+}
+
 /* Header and Navbar */
 header {
     position: fixed;
@@ -18,27 +23,25 @@ header {
 }
 
 #nav {
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    color: #fff;
+    padding: 0 3rem;
 }
 
-.logo-container {
+.logo-container{
     display: flex;
     align-items: center;
-    margin-left: auto; /* Pushes the logo and company name to the right */
 }
 
 .logo-container img {
-    height: 40px; /* Adjust size as needed */
+    height: 40px;
     margin-right: 10px;
     border-radius: 5px;
 }
 
 .logo-container h1 {
-    margin: 0;
     font-size: 1.5em;
     color: white;
 }
@@ -46,27 +49,27 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
-    margin: 0;
-    padding: 0;
-    margin-right: auto; /* Pushes the navigation links to the left */
-}
-
-.nav-links li {
-    margin-right: 20px; /* Adjust the space between nav items */
+    gap: 30px;
 }
 
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    padding: 5px 10px;
     transition: background-color 0.3s ease;
-    border-radius: 10px;
 }
 
 .nav-links a:hover {
-    background-color: whitesmoke;
-    color: black;
-    border-radius: 10px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #fff;
+}
+.nav-links li:last-child a:hover{
+    border-bottom: none;
+}
+
+.cart-icon img {
+   width: 24px;
+   height: auto;
+   margin-left: 3rem;
 }
 
 /* Banner Section with Video */
@@ -141,10 +144,14 @@ header {
 
 /* Services Section */
 #services {
+    padding-top:1vh;
+    background-color: black;
+}
+
+.service-list {
     display: flex;
     justify-content: space-around;
     padding: 40px 0;
-    background-color: black;
 }
 
 .services-item {
@@ -159,6 +166,8 @@ header {
     color: white;
 }
 
+
+
 /* Product Categories */
 #product-categories {
     background-color: black;
@@ -168,8 +177,21 @@ header {
 .section-title {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 40px;
     color: white;
+    padding-bottom: 5vh;
+    padding-top: 10vh;
+}
+.section-title::after
+{
+  content: '';
+  border-bottom: 3px solid #ccc;
+  width: 10%;
+  display: block;
+  margin: 7px auto 0;
+}
+
+.section-title.service-title{
+    padding-bottom: 0;
 }
 
 .category-list {
@@ -184,8 +206,9 @@ header {
     text-align: center;
     color: white;
     text-decoration: none;
-    width: 200px; /* Adjust width for a consistent look */
+    width: 20%; /* Adjust width for a consistent look */
     transition: transform 0.3s ease; /* Smooth hover effect */
+    padding-bottom: 4vh;
 }
 
 .category-list a img {
@@ -212,7 +235,8 @@ button, .category-list a {
 
 button:hover, .category-list a:hover {
     transform: translateY(-5px);
-    background-color: #333;
+    background-color: #1a1a1af0;
+    border-radius: 5px;
 }
 
 /* Video Section */
@@ -251,21 +275,26 @@ button:hover, .category-list a:hover {
 
 /* Footer */
 #footer {
-    padding: 20px;
+    padding: 40px;
     background-color: #0b0b0b;
     color: #fff;
-    text-align: center;
     line-height: 1.8;
+    min-height: 15vh;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left-section .info{
+    margin-top: 1vh;
 }
 
 .footer-heading{
     font-family: Algerian;
     font-size: x-large;
-}
-
-.logo-container{
-    display: flex;
-    justify-content: center;
 }
 
 .footer-links {
