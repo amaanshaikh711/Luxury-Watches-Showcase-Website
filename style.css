@@ -333,16 +333,65 @@ button:hover, .category-list a:hover {
 }
 
 /* Social Icons */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-content .middle-section {
+    text-align: center;
+    flex: 1;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
 .social-icons a {
     color: #bbb;
-    margin: 0 10px;
+    margin: 0 15px;
     font-size: 1.5em;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .social-icons a:hover {
     color: #007bff;
 }
+
+.owner-info .info {
+    color: #bbb;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+}
+
 /* Product Page */
 /* Additional Styles for Watches Page */
 
