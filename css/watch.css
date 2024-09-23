@@ -1,5 +1,5 @@
 body{
-    background-color: rgba(22, 22, 22, 0.996);
+    background-color: rgba(22, 22, 22, 0.996) !important;
 }
 
 
@@ -36,11 +36,12 @@ font-family: Algerian;
     gap: 20px;
 }
 .products-item {
-    flex: 0 0 23%; 
+    /* flex: 0 0 23%;  */
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
+    width: 24%;
 }
 
 .products-item p{
@@ -106,16 +107,5 @@ box-shadow: 0 15px 25px rgb(11, 11, 11);
     display: inline-block; /* Ensure proper layout */
 }
 
-@media (max-width: 768px) {
-.products-item {
-flex: 0 0 48%;
-}
-}
-
-@media (max-width: 576px) {
-.products-item {
-flex: 0 0 100%;
-}
-}
 
 
