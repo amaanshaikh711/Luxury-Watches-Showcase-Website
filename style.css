@@ -63,6 +63,7 @@ header {
     border-bottom: 1px solid #fff;
     border-radius: 5px;
     text-decoration:none;
+    color:white;
 }
 .nav-links li:last-child a:hover{
     border-bottom: none;
