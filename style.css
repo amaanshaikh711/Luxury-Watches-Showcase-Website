@@ -280,7 +280,7 @@ Footer */
 #footer {
     padding: 40px;
     background-color: black ;
-    color: #fff;
+    color: white;
     line-height: 1.8;
     min-height: 15vh;
 }
