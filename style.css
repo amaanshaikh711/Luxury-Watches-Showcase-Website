@@ -277,6 +277,7 @@ button:hover, .category-list a:hover {
 }
 
 /* Footer */
+/* Footer */
 #footer {
     padding: 40px;
     background-color: #0b0b0b;
@@ -287,22 +288,24 @@ button:hover, .category-list a:hover {
 
 .footer-content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between; /* Changed to space-between */
+    align-items: flex-start; /* Align items at the top */
 }
 
-.left-section .info{
+.left-section .info {
     margin-top: 1vh;
 }
 
-.footer-heading{
-    font-family: Algerian;
-    font-size: x-large;
+.footer-heading {
+    font-family: Algerian, sans-serif;
+    font-size: 24px; /* Increased size */
+    margin-bottom: 10px; /* Space below heading */
 }
 
 .footer-links {
     list-style: none;
-    padding: 5px;
+    padding: 0; /* Reset padding */
+    margin: 20px 0; /* Add margin */
 }
 
 .footer-links li {
@@ -313,14 +316,31 @@ button:hover, .category-list a:hover {
 .footer-links a {
     color: #fff;
     text-decoration: none;
-    padding: 1.5px;
+    padding: 5px 10px; /* Added padding */
     border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .footer-links a:hover {
     background-color: white;
     color: black;
     border-radius: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center icons */
+    margin: 15px 0; /* Space above and below */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Space between icons */
+}
+
+.social-icons img {
+    width: 24px; /* Icon size */
+    height: 24px;
 }
 
 /* Product Page */
