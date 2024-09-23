@@ -277,84 +277,35 @@ button:hover, .category-list a:hover {
 }
 
 /* Footer */
-/* Footer */
 #footer {
-    padding: 40px;
-    background-color: #0b0b0b;
+    background-color: #333;
     color: #fff;
-    line-height: 1.8;
-    min-height: 15vh;
+    padding: 20px 0;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between; /* Changed to space-between */
-    align-items: flex-start; /* Align items at the top */
-}
-
-.left-section .info {
-    margin-top: 1vh;
-}
-
-.footer-heading {
-    font-size: 24px; /* Increased size */
-    margin-bottom: 10px; /* Space below heading */
-    text-align:center;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0; /* Reset padding */
-    margin: 20px 0; /* Add margin */
-}
-
-.footer-links li {
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px; /* Added padding */
-    border-radius: 5px;
-    transition: background-color 0.3s; /* Smooth transition */
-}
-
-.footer-links a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-}
-
-.info{
-    margin-top: 200px;
-    margin-left: 86px;
-}
-
-/* Social Icons */
 .footer-content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
 }
 
-.footer-content .middle-section {
-    text-align: center;
+.left-section, .middle-section, .right-section {
     flex: 1;
+    padding: 10px;
+}
+
+.middle-section {
+    text-align: center;
 }
 
 .footer-links {
     list-style: none;
     padding: 0;
-    margin: 0;
 }
 
 .footer-links li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 .footer-links li a {
@@ -372,24 +323,24 @@ button:hover, .category-list a:hover {
 
 .social-icons a {
     color: #bbb;
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 1.5em;
     transition: 0.3s;
-    display: inline-block;
 }
 
 .social-icons a:hover {
     color: #007bff;
 }
 
-.owner-info .info {
-    color: #bbb;
-    font-size: 0.9em;
+.owner-info {
     margin-top: 20px;
+    font-size: 0.9em;
+    color: #bbb;
 }
 
-.left-section, .right-section {
-    flex: 1;
+.logo-container img {
+    width: 100px;
+    margin-bottom: 10px;
 }
 
 /* Product Page */
