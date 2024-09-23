@@ -279,7 +279,7 @@ button:hover, .category-list a:hover {
 Footer */
 #footer {
     padding: 40px;
-    background-color: #0b0b0b;
+    background-color: black ;
     color: #fff;
     line-height: 1.8;
     min-height: 15vh;
