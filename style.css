@@ -65,6 +65,7 @@ header {
     color: black;
     border-radius: 5px;
     text-decoration:none;
+    padding:5px;
 }
 .nav-links li:last-child a:hover{
     border-bottom: none;
