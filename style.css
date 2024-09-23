@@ -55,7 +55,7 @@ header {
 .nav-links a {
     text-decoration: none;
     color: #fff;
-    transition: background-color 0.3s ease;
+    
 }
 
 .nav-links a:hover {
