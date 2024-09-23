@@ -327,6 +327,10 @@ button:hover, .category-list a:hover {
     border-radius: 5px;
 }
 
+.owner-info{
+    margin-bottom:2px;
+}
+
 /* Social Icons */
 .social-icons {
     display: flex;
