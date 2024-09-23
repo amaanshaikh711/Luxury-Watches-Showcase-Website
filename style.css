@@ -394,7 +394,7 @@ button:hover, .category-list a:hover {
 
 .buy-now-btn {
     display: block; /* Ensure button is centered */
-    margin-top: 10px; /* Space between image and button */
+    margin-top: 10px; 
     background-color: #007bff;
     color: white;
     transition: background-color 0.3s ease;
