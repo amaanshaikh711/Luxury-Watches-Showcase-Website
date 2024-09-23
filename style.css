@@ -327,8 +327,9 @@ button:hover, .category-list a:hover {
     border-radius: 5px;
 }
 
-.owner-info{
-    margin-bottom:2px;
+.info{
+    margin-top: 200px;
+    margin-left: 86px;
 }
 
 /* Social Icons */
