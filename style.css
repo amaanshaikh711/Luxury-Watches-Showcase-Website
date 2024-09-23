@@ -297,9 +297,9 @@ button:hover, .category-list a:hover {
 }
 
 .footer-heading {
-    font-family: Algerian, sans-serif;
     font-size: 24px; /* Increased size */
     margin-bottom: 10px; /* Space below heading */
+    text-align:center;
 }
 
 .footer-links {
@@ -432,28 +432,4 @@ button:hover, .category-list a:hover {
 .buy-now-btn:hover {
     background-color: #ff5733;
     color: white;
-}
-
-@media only screen and (min-width: 601px) {
-  header {
-    font-size: 1.3em;
-  }
- #nav{
-    font-size: 1em;
-}
-
-@media (max-width: 1920px), (max-height: 1080px) {
-    .category-list a img {
-    width: 100%;
-    height: 316px;
-    object-fit: cover;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 1, 1);
-}
-}
-
-@media only screen and (min-width: 320px) {
- .category-list a img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.4s cubic-bezier(0.4, 0, 1, 1);
 }
