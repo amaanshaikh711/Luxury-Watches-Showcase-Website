@@ -66,7 +66,7 @@ header {
     border-radius: 5px;
     text-decoration:none;
     transition: background-color 0.5s ease;
-    padding:5px;
+   
     
 }
 .nav-links li:last-child a:hover{
