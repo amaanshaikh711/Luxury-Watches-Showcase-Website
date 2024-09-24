@@ -30,16 +30,35 @@
     }
     .nav-links{
         display: none;
+        position: absolute;
+        width: 50vw;
+        height: 33vh;
+        top: 8vh;
+        right: 0;
+        background-color: #000000eb;
+    }
+
+    .nav-links.active{
+        display: block;
+    }
+
+    .nav-links li{
+        text-align: center;
+        padding: 2vh;
+        font-size: 2vh;
+        border: 1px solid #cccccc24;
+    }
+
+    .nav-links li:last-child a {
+        margin-right: 3rem;
     }
 
     .menu-toggle{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        line-height: 0.5;
+        font-size: 1.5rem;
     }
 
-
+    
 
     .service-list{
         flex-wrap: wrap;
@@ -101,11 +120,13 @@
     }
 
     .products-item p{
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+        line-height: 1.2;
     }
 
     .products-item .price{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .product-label h4{
@@ -118,8 +139,13 @@
     }
 
     .products-item .overlay .btn{
-        font-size: 14px;
-        padding: 3px 7px;
+        font-size: 12px;
+        padding: 3px 6px;
+    }
+
+    .view-details{
+        margin-top: 12px;
+        font-size: 10px;
     }
 
     /* ABOUT US */
