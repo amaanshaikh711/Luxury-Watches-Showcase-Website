@@ -48,6 +48,7 @@ header {
     height: 40px;
     margin-right: 10px;
     border-radius: 5px;
+    
 }
 
 .logo-container h1 {
@@ -396,7 +397,7 @@ button:hover, .category-list a:hover {
 }
 
 .logo-container img {
-    width: 100px;
+    width: 70px;
     margin-bottom: 10px;
 }
 

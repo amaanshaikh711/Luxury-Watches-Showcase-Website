@@ -1,0 +1,27 @@
+body {
+    color: white;
+    background-color: rgba(22, 22, 22, 0.996) !important;
+}
+
+.watch-detail.container {
+    color: white;
+    margin-top: 100px;
+}
+
+.button-group {
+    margin-top: 20px; /* Adds space between the image and buttons */
+}
+
+.button-group .btn {
+    margin: 5px; /* Adds space between the buttons */
+}
+
+.buy-now {
+    background-color: #007bff; /* Primary color */
+    color: white;
+}
+
+.add-to-cart {
+    background-color: #6c757d; /* Secondary color */
+    color: white;
+}
