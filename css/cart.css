@@ -1,6 +1,4 @@
 /* Cart Section */
-/* This will make the entire page use flexbox to position footer */
-/* Ensuring the body takes full height */
 html, body {
     height: 100%;
     margin: 0;
