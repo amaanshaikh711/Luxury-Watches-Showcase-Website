@@ -560,4 +560,84 @@ button:hover, .category-list a:hover {
     color: white;
 }
 
+/* New Stying for about-us and brands */
+.about-us-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #000;
+    color: #fff; /* Text color for visibility on black background */
+}
 
+.about-us-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    /* color: #ffd700;  */
+}
+
+.about-us-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.brands-section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: #000;
+}
+
+.brands-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.brands-container {
+    display: flex;
+    justify-content: space-around; /* Equal space between items */
+    align-items: center; /* Vertically align items */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.brands-container img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover; /* This ensures the images fill the box while maintaining aspect ratio */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(1.2);
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #fff; /* Optional: Adds a white border for better visibility */
+}
+
+
+.brands-container img:hover {
+    transform: scale(1.1); /* Enlarges the image on hover */
+    filter: brightness(1.5); /* Increase brightness on hover */
+}
+
+
+.about-us-section h2,
+.brands-section h2 {
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; /* Change this to your preferred color */
+}
+
+.about-us-section h2,
+.brands-section h2 {
+    position: relative;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #fff; /* Text color */
+}
+
+.about-us-section h2::after,
+.brands-section h2::after {
+    content: '';
+    border-bottom: 3px solid #ccc; /* Underline color */
+    width: 10%; /* Width of the underline */
+    display: block;
+    margin: 7px auto 0; /* Centering the underline */
+}
