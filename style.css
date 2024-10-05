@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+
 a:hover{
     text-decoration: none;
 }
@@ -67,7 +72,7 @@ header {
     text-decoration: none;
     color: #fff;
     
-}
+}  
 
 .nav-links a:hover {
     padding-bottom: 3px;
@@ -83,6 +88,48 @@ header {
    width: 30px;
    height: auto;
    margin-left: 3rem;
+}
+
+/* Slider Styles */
+#nav {
+    position: relative; /* Necessary for positioning the slider */
+}
+
+.nav-links li {
+    position: relative; /* To position the slider absolutely */
+}
+
+.slider {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%; /* Position below the navbar */
+    left: 0;
+    padding: 0.5em; /* Adjust padding */
+    background: #f8f8f8;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    width: 200px; /* Set a fixed width for the slider */
+}
+
+.dropdown:hover .slider {
+    display: flex; /* Show slider on hover */
+    flex-direction: column; /* Arrange items in a column */
+    gap: 0.5em; /* Space between items */
+}
+
+.slider-item {
+    background: #000;
+    color: #fff;
+    padding: 0.5em; /* Adjust padding for smaller size */
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-size: 0.9em; /* Adjust font size */
+}
+
+.slider-item:hover {
+    transform: scale(1.05); /* Slightly smaller hover effect */
 }
 
 /* Banner Section with Video */

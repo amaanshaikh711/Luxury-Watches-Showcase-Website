@@ -30,18 +30,29 @@ function menuToggle(params) {
 }
 
 
-// $(document).ready(function(){
-//     $('.buy-now-btn').hover(function(){
-//         $(this).css('background-color', '#ff5733');
-//     }, function(){
-//         $(this).css('background-color', '#007bff');
-//     });
 
-//     $('.product-img').hover(function(){
-//         $(this).css('transform', 'scale(1.1)');
-//     }, function(){
-//         $(this).css('transform', 'scale(1)');
-//     });
-// });
-  
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    
+    document.querySelectorAll('.slider-item').forEach(item => {
+        item.addEventListener('click', function() {
+            const targetId = this.getAttribute('onclick').match(/'(.*?)'/)[1];
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+
+
   

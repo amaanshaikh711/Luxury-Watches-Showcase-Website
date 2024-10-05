@@ -7,8 +7,24 @@
     </div>
     <ul id="nav-links" class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="watch.html">Watches</a></li>
-        <li><a href="aboutus.html">About Us</a></li>
+        <li class="dropdown">
+            <a href="#">Watches</a>
+            <div class="slider">
+                <div class="slider-item" onclick="location.href='watch.html#patek-philippe'">Patek Philippe</div>
+                <div class="slider-item" onclick="location.href='watch.html#rolex'">Rolex</div>
+                <div class="slider-item" onclick="location.href='watch.html#hublot'">Hublot</div>
+                <div class="slider-item" onclick="location.href='watch.html#jacob'">Jacob & Co</div>
+                <div class="slider-item" onclick="location.href='watch.html#tag-huer'">Tag Heuer</div>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a href="#">About Us</a>
+            <div class="slider">
+                <div class="slider-item" onclick="location.href='aboutus.html#luxury-watches'">About Luxury Watches</div>
+                <div class="slider-item" onclick="location.href='aboutus.html#our-history'">Our History</div>
+                <div class="slider-item" onclick="location.href='aboutus.html#our-mission'">Our Mission</div>
+            </div>
+        </li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="cart.html" class="cart-icon">
             <img src="images/cart1.png" alt="Cart">
